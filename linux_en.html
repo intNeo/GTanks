@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTanks Online 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="recources/img/favicon.ico" type="image/x-icon">
+    <link rel="alternate" hreflang="en" href="linux.html">
+</head>
+<script src="js/script.js"></script>
+
+<body class="body_main">
+    <div class="navigation-panel">
+        <a href="index_en.html">Home</a>
+        <a href="macos_en.html">Instructions for Mac</a>
+        <a href="linux_en.html">Instructions for Linux</a>
+        <a href="linux.html">Switch to Russian</a>
+    </div>
+
+    <h1>How to play GTanks on Linux (example MX Linux (Debian similar distribution))</h1>
+
+    <div class="div_t1">
+        <t1>Since most users use Windows OS, there was not much demand to port the client to another platform. This
+            tutorial is an installation (loader of executable files with the .exe extension) or wine.
+        </t1>
+    </div>
+
+    <ol>
+        <li>You need to download two executable files .exe <a
+                href="recources/files/for_linux/flashplayer_32.exe">flashplayer_32.exe</a> и <a
+                href="recources/files/for_linux/GlobalSettings.exe">GlobalSettings.exe</a>;</li>
+
+        <a href="recources/img/for_linux/linux1.png" target="_blank">
+            <img src="recources/img/for_linux/linux1.png" alt="Images">
+        </a>
+
+        <li>Open the terminal CTRL + ALT + T;</li>
+        <a href="recources/img/for_linux/linux2.png" target="_blank">
+            <img src="recources/img/for_linux/linux2.png" alt="Images">
+        </a>
+
+        <li>Update the repositories (sudo apt update);</li>
+        <a href="recources/img/for_linux/linux3.png" target="_blank">
+            <img src="recources/img/for_linux/linux3.png" alt="Images">
+        </a>
+
+        <li>Install wine (.exe file loader) (sudo apt install wine -y);
+        </li>
+        <a href="recources/img/for_linux/linux4.png" target="_blank">
+            <img src="recources/img/for_linux/linux4.png" alt="Images">
+        </a>
+
+        <li>Install wine32 (add-on) (sudo apt install wine32 -y);</li>
+        <a href="recources/img/for_linux/linux5.png" target="_blank">
+            <img src="recources/img/for_linux/linux5.png" alt="Images">
+        </a>
+
+        <li>After installation, open the wine configurator (winecfg);</li>
+        <a href="recources/img/for_linux/linux6.png" target="_blank">
+            <img src="recources/img/for_linux/linux6.png" alt="Images">
+        </a>
+
+        <li>Select "Windows Version: Windows 10" and click "OK";</li>
+        <a href="recources/img/for_linux/linux7.png" target="_blank">
+            <img src="recources/img/for_linux/linux7.png" alt="Images">
+        </a>
+
+        <li><a href="#">Download the client.</a> The downside of this client is that you will have to manually update it
+            (that is, you need to download the archive again when a post about innovations comes out, so watch out!!!);
+        </li>
+
+        <li>After that, open “GlobalSettings.exe” (wine GlobalSettings.exe);</li>
+        <a href="recources/img/for_linux/linux8.png" target="_blank">
+            <img src="recources/img/for_linux/linux8.png" alt="Images">
+        </a>
+
+        <li>Select the "Advanced" tab;</li>
+        <a href="recources/img/for_linux/linux9.png" target="_blank">
+            <img src="recources/img/for_linux/linux9.png" alt="Images">
+        </a>
+
+        <li>Click on “Setting up a trusted folder...”;</li>
+        <a href="recources/img/for_linux/linux10.png" target="_blank">
+            <img src="recources/img/for_linux/linux10.png" alt="Images">
+        </a>
+
+        <li>Click on "Add...", "Add folder..." and select the path to the "client" folder IMPORTANT! the path will be
+            displayed in wine like this: "Z:\home\sandbox\Desktop\client" in Linux it is "/home/sandbox/Desktop/client"
+            this is normal, because We emulate the Windows file system in Linux;</li>
+        <a href="recources/img/for_linux/linux11.png" target="_blank">
+            <img src="recources/img/for_linux/linux11.png" alt="Images">
+        </a>
+
+        <li>Check that the path to the folder has been added and then click on “Close”;</li>
+        <a href="recources/img/for_linux/linux12.png" target="_blank">
+            <img src="recources/img/for_linux/linux12.png" alt="Images">
+        </a>
+
+        <li>Open "flashplayer_32.exe" (wine flashplayer_32.exe);</li>
+        <a href="recources/img/for_linux/linux13.png" target="_blank">
+            <img src="recources/img/for_linux/linux13.png" alt="Images">
+        </a>
+
+        <li>Click "File" -> "Open" -> "Browse" and select "GTloader.swf";</li>
+        <a href="recources/img/for_linux/linux14.png" target="_blank">
+            <img src="recources/img/for_linux/linux14.png" alt="Images">
+        </a>
+
+        <li>Click "OK";</li>
+        <a href="recources/img/for_linux/linux15.png" target="_blank">
+            <img src="recources/img/for_linux/linux15.png" alt="Images">
+        </a>
+
+        <li>Ready!</li>
+        <a href="recources/img/for_linux/linux16.png" target="_blank">
+            <img src="recources/img/for_linux/linux16.png" alt="Images">
+        </a>
+    </ol>
+    <div class="div_t1">
+        <t1>I hope this tutorial helped you install the client on your Linux. Good luck on the battlefields!</t1>
+    </div>
+    <br>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Прокрутить вверх">↑</button>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

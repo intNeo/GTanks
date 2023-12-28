@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTanks Online 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="recources/img/favicon.ico" type="image/x-icon">
+    <link rel="alternate" hreflang="en" href="linux_en.html">
+</head>
+<script src="js/script.js"></script>
+
+<body class="body_main">
+    <div class="navigation-panel">
+        <a href="index.html">Главная</a>
+        <a href="macos.html">Инструкция для Mac</a>
+        <a href="linux.html">Инструкция для Linux</a>
+        <a href="linux_en.html">Переключиться на Английский</a>
+    </div>
+
+    <h1>Как поиграть в GTanks на Linux (пример MX Linux (Debian подобный дистрибутив))</h1>
+
+    <div class="div_t1">
+        <t1>Так как большинство пользователей, используют OS Windows, то не было большого спроса портировать клиент на
+            другую платформу.
+            Данный туториал представляет из себя установку (загрузчика исполняемых файлов расширением .exe) или же wine.
+        </t1>
+    </div>
+
+    <ol>
+        <li>Необходимо скачать два исполняемых файла .exe <a
+                href="recources/files/for_linux/flashplayer_32.exe">flashplayer_32.exe</a> и <a
+                href="recources/files/for_linux/GlobalSettings.exe">GlobalSettings.exe</a>;</li>
+
+        <a href="recources/img/for_linux/linux1.png" target="_blank">
+            <img src="recources/img/for_linux/linux1.png" alt="Images">
+        </a>
+
+        <li>Открываем терминал CTRL + ALT + T;</li>
+        <a href="recources/img/for_linux/linux2.png" target="_blank">
+            <img src="recources/img/for_linux/linux2.png" alt="Images">
+        </a>
+
+        <li>Обновляем репозитории (sudo apt update);</li>
+        <a href="recources/img/for_linux/linux3.png" target="_blank">
+            <img src="recources/img/for_linux/linux3.png" alt="Images">
+        </a>
+
+        <li>Устанавливаем wine (загрузчик .exe файлов) (sudo apt install wine -y);</li>
+        <a href="recources/img/for_linux/linux4.png" target="_blank">
+            <img src="recources/img/for_linux/linux4.png" alt="Images">
+        </a>
+
+        <li>Устанавливаем wine32 (дополнение) (sudo apt install wine32 -y);</li>
+        <a href="recources/img/for_linux/linux5.png" target="_blank">
+            <img src="recources/img/for_linux/linux5.png" alt="Images">
+        </a>
+
+        <li>После установки открываем конфигуратор wine (winecfg);</li>
+        <a href="recources/img/for_linux/linux6.png" target="_blank">
+            <img src="recources/img/for_linux/linux6.png" alt="Images">
+        </a>
+
+        <li>Выбираем "Версию Windows: Windows 10" и нажимаем "ОК";</li>
+        <a href="recources/img/for_linux/linux7.png" target="_blank">
+            <img src="recources/img/for_linux/linux7.png" alt="Images">
+        </a>
+
+        <li><a href="#">Скачиваем клиент.</a> Минус этого клиента вам придется вручную обновлять его (т.е. вам нужно
+            заного скачивать архив когда выходит пост о нововедениях, поэтому следите!!!);</li>
+
+        <li>После этого открываем "GlobalSettings.exe" (wine GlobalSettings.exe);</li>
+        <a href="recources/img/for_linux/linux8.png" target="_blank">
+            <img src="recources/img/for_linux/linux8.png" alt="Images">
+        </a>
+
+        <li>Выбираем вкладку "Дополнительно";</li>
+        <a href="recources/img/for_linux/linux9.png" target="_blank">
+            <img src="recources/img/for_linux/linux9.png" alt="Images">
+        </a>
+
+        <li>Нажимаем на "Настройка доверенной папки...";</li>
+        <a href="recources/img/for_linux/linux10.png" target="_blank">
+            <img src="recources/img/for_linux/linux10.png" alt="Images">
+        </a>
+
+        <li>Нажимаем на "Добавить...", "Добавить папку ..." и выбираем путь к папки "client" ВАЖНО! путь будет в wine
+            отображаться так "Z:\home\sandbox\Рабочий стол\client" в linux он следующий "/home/sandbox/Рабочий
+            стол/client" это нормально, т.к. у нас эмуляция файловой системы Windows в Linux;</li>
+        <a href="recources/img/for_linux/linux11.png" target="_blank">
+            <img src="recources/img/for_linux/linux11.png" alt="Images">
+        </a>
+
+        <li>Проверьте, что добавился путь к папки и после этого нажмите на "Закрыть";</li>
+        <a href="recources/img/for_linux/linux12.png" target="_blank">
+            <img src="recources/img/for_linux/linux12.png" alt="Images">
+        </a>
+
+        <li>Открываем "flashplayer_32.exe" (wine flashplayer_32.exe);</li>
+        <a href="recources/img/for_linux/linux13.png" target="_blank">
+            <img src="recources/img/for_linux/linux13.png" alt="Images">
+        </a>
+
+        <li>Нажимаем "Файл" -> "Открыть" -> "Обзор" и выбираем "GTloader.swf";</li>
+        <a href="recources/img/for_linux/linux14.png" target="_blank">
+            <img src="recources/img/for_linux/linux14.png" alt="Images">
+        </a>
+
+        <li>Нажимаем "ОК";</li>
+        <a href="recources/img/for_linux/linux15.png" target="_blank">
+            <img src="recources/img/for_linux/linux15.png" alt="Images">
+        </a>
+
+        <li>Готово!</li>
+        <a href="recources/img/for_linux/linux16.png" target="_blank">
+            <img src="recources/img/for_linux/linux16.png" alt="Images">
+        </a>
+    </ol>
+    <div class="div_t1">
+        <t1>Надеюсь данный туториал тебе помог установить клиент на твой Linux. Удачи на полях сражений!</t1>
+    </div>
+    <br>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Прокрутить вверх">↑</button>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>
